@@ -16,7 +16,7 @@
     <meta property="og:type" content="website"/>
     <meta content="summary_large_image" name="twitter:card"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <link href="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/css/hopypay.webflow.be8130573.css" rel="stylesheet" type="text/css"/>
+    <link href="stylemain.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -336,7 +336,7 @@
                                 </div>
                             </div>
                             <div class="nav-list">
-                                <a href="/solucoes" class="nav-item">Soluções</a>
+                                <a class="nav-item">Soluções</a>
                                 <div class="horizontal-wrapper gap-05">
                                     <div class="ico-24 w-embed">
                                         <!--seta direita gradiente--><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -349,7 +349,7 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <a href="/hopy-split" class="nav-item">hopySplit</a>
+                                    <a href="/bridge" class="nav-item">definityBridge</a>
                                 </div>
                                 <div class="horizontal-wrapper gap-05">
                                     <div class="ico-24 w-embed">
@@ -363,7 +363,7 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <a href="/hopy-hub" class="nav-item">hopyHub</a>
+                                    <a href="/mix" class="nav-item">definityMix</a>
                                 </div>
                                 <div class="horizontal-wrapper gap-05">
                                     <div class="ico-24 w-embed">
@@ -377,11 +377,11 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <a href="/hopy-checkout" class="nav-item">hopyCheckout</a>
+                                    <a href="/vault" class="nav-item">definityVault</a>
                                 </div>
-                                <a href="/integracoes" class="nav-item">Integrações</a>
+                             
                                 <a href="/quem-somos" class="nav-item">Quem Somos</a>
-                                <a href="/desenvolvimento" class="nav-item">Desenvolvimento</a>
+                              
                                 <a href="/contato" class="button is-stroke is-small w-button">Contato</a>
                             </div>
                         </div>
@@ -395,7 +395,7 @@
                                         <div class="nav-desktop-menu">
                                             <div data-hover="true" data-delay="0" class="w-dropdown">
                                                 <div class="nav-item is-dropdown w-dropdown-toggle">
-                                                    <a href="/solucoes" class="nav-item">Soluções</a>
+                                                    <a class="nav-item">Soluções</a>
                                                     <div class="ico-18 w-embed">
                                                         <!--seta baixo sem pau so os 2 da seta--><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.53033 13.5303C9.23744 13.8232 8.76256 13.8232 8.46967 13.5303L3.46967 8.53033C3.17678 8.23744 3.17678 7.76256 3.46967 7.46967C3.76256 7.17678 4.23744 7.17678 4.53033 7.46967L9 11.9393L13.4697 7.46967C13.7626 7.17678 14.2374 7.17678 14.5303 7.46967C14.8232 7.76256 14.8232 8.23744 14.5303 8.53033L9.53033 13.5303Z" fill="currentColor"/>
@@ -403,10 +403,10 @@
                                                     </div>
                                                 </div>
                                                 <nav class="dropdown-open position-fix w-dropdown-list">
-                                                    <a href="/hopy-split" class="dropdown-item w-inline-block">
+                                                    <a href="/bridge" class="dropdown-item w-inline-block">
                                                         <div>
-                                                            hopy
-                                                            <span class="text-weight-medium">Split</span>
+                                                            definity
+                                                            <span class="text-weight-medium">Bridge</span>
                                                         </div>
                                                         <div class="ico-24 is-dropdown w-embed">
                                                             <!--seta direita gradiente--><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -420,10 +420,10 @@
                                                             </svg>
                                                         </div>
                                                     </a>
-                                                    <a href="/hopy-hub" class="dropdown-item w-inline-block">
+                                                    <a href="/mix" class="dropdown-item w-inline-block">
                                                         <div>
-                                                            hopy
-                                                            <span class="text-weight-medium">Hub</span>
+                                                            definity
+                                                            <span class="text-weight-medium">Mix</span>
                                                         </div>
                                                         <div class="ico-24 is-dropdown w-embed">
                                                             <!--seta direita gradiente--><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -437,10 +437,10 @@
                                                             </svg>
                                                         </div>
                                                     </a>
-                                                    <a href="/hopy-checkout" class="dropdown-item w-inline-block">
+                                                    <a href="/vault" class="dropdown-item w-inline-block">
                                                         <div>
-                                                            hopy
-                                                            <span class="text-weight-medium">Checkout</span>
+                                                            definity
+                                                            <span class="text-weight-medium">Vault</span>
                                                         </div>
                                                         <div class="ico-24 is-dropdown w-embed">
                                                             <!--seta direita gradiente--><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -456,9 +456,9 @@
                                                     </a>
                                                 </nav>
                                             </div>
-                                            <a href="/integracoes" class="nav-item">Integrações</a>
+                                            
                                             <a href="/quem-somos" class="nav-item">Quem Somos</a>
-                                            <a href="/desenvolvimento" class="nav-item">Desenvolvimento</a>
+                                            
                                             <div class="w-locales-list">
                                                 <div data-hover="true" data-delay="0" class="w-dropdown">
                                                     <div class="nav-item is-dropdown w-dropdown-toggle">
@@ -586,12 +586,13 @@
                 <div class="gradient-left"></div>
                 <div class="gradient-middle"></div>
             </section>
+            <div class="divider"></div>
             <section class="section-fluxo">
                 <div class="padding-global">
                     <div class="container-large">
                         <div class="row justify-center">
                             <div class="col col-lg-12">
-                                <div data-w-id="818523c7-90bf-563c-1f20-111c666d5a30" data-is-ix2-target="1" class="lottie" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6617f4fd32f491bdf6c91dad_hopy-hub.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="11.011010562523365" data-duration="0"></div>
+                                <div data-w-id="818523c7-90bf-563c-1f20-111c666d5a30" data-is-ix2-target="1" class="lottie" data-animation-type="lottie" data-src="anim.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="11.011010562523365" data-duration="0"></div>
                                 <div class="fluxo-mobile">
                                     <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6615af74fcb3aebee5986b0c_Hopy%20Hub%20-%20Fluxo%20Mobile.svg" loading="lazy" alt="Hopy Hub Fluxo"/>
                                 </div>
@@ -663,85 +664,6 @@
                     </div>
                 </div>
             </section>
-            <div class="divider"></div>
-            <section animate="fade" class="section-clientes p-sec-6">
-                <div class="logos-animate">
-                    <div class="logos-wrapper">
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7d7b133fd05580ec1_a55.svg" loading="lazy" alt="Logo a55"/>
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6697ce6de23ea02d62e2a5e1_logo-dompgto.png" loading="lazy" alt=""/>
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7937c23d625ca5666_gremio.svg" loading="lazy" alt="Logo Grêmio"/>
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7518d8bce4d5383ea_box-delivery.svg" loading="lazy" alt="Logo Box Delivery"/>
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b8e0288dac32fb0a6d_zouti.svg" loading="lazy" alt="Logo Zouti"/>
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7ea9fecd145d445e7_cazco-digital.svg" loading="lazy" alt="Logo Cazco Digital"/>
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7988413d90bfa61aa_get-commerce.svg" loading="lazy" alt="Logo Get Commerce"/>
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6697ce6dee68c233e197de4c_logo-paggx.png" loading="lazy" alt=""/>
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6793c33ad68d1fe63309428b_Pay2m-2.png" loading="lazy" alt=""/>
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7a7f220099e1d6aa2_pagou-ai.svg" loading="lazy" alt="Logo Pagou.ai"/>
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6758986a4342e9bda58938fd_logo-paguesafe.png" loading="lazy" alt=""/>
-                    </div>
-                    <div class="logos-wrapper">
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7d7b133fd05580ec1_a55.svg" loading="lazy" alt="Logo a55"/>
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6697ce6de23ea02d62e2a5e1_logo-dompgto.png" loading="lazy" alt=""/>
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7937c23d625ca5666_gremio.svg" loading="lazy" alt="Logo Grêmio"/>
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7518d8bce4d5383ea_box-delivery.svg" loading="lazy" alt="Logo Box Delivery"/>
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b8e0288dac32fb0a6d_zouti.svg" loading="lazy" alt="Logo Zouti"/>
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7ea9fecd145d445e7_cazco-digital.svg" loading="lazy" alt="Logo Cazco Digital"/>
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7988413d90bfa61aa_get-commerce.svg" loading="lazy" alt="Logo Get Commerce"/>
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6697ce6dee68c233e197de4c_logo-paggx.png" loading="lazy" alt=""/>
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b73e2284db42338d3a_pay2m.svg" loading="lazy" alt="Logo Pay2m"/>
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7a7f220099e1d6aa2_pagou-ai.svg" loading="lazy" alt="Logo Pagou.ai"/>
-                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b73fe9ad962bca2c30_abmex.svg" loading="lazy" alt="Logo Abmexx"/>
-                    </div>
-                </div>
-            </section>
-            <div class="divider"></div>
-            <section class="section-integracoes">
-                <div class="padding-global">
-                    <div class="container-large">
-                        <div class="row align-center justify-between">
-                            <div class="col col-lg-4 col-md-12">
-                                <div animate="fade-up" class="vertical-wrapper left-md">
-                                    <div class="title-content">
-                                        <div class="title-left" animate="fade-up">
-                                            <div class="title-span">Definity</div>
-                                            <h2 class="heading-style-h2">Integrações</h2>
-                                            <div class="text-size-medium">Backoffice Integrado com mais de35 parceiros de processamento</div>
-                                        </div>
-                                    </div>
-                                    <a href="/integracoes" class="button m-tp-1 w-button">Veja as integrações</a>
-                                </div>
-                            </div>
-                            <div class="col col-lg-7 col-md-12">
-                                <div class="integracoes-animate-wrapper">
-                                    <div class="intg-dot verde"></div>
-                                    <div class="intg-dot amarelo"></div>
-                                    <div class="intg-dot rosa"></div>
-                                    <div class="intg-dot lime"></div>
-                                    <div class="intg-dot laranja"></div>
-                                    <div class="intg-dot azul"></div>
-                                    <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6614057a3ceed915bf520609_bankly.svg" loading="lazy" animate="logo" alt="Logo Bankly" class="intg-bankly"/>
-                                    <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6614057be5a66677c1110095_aarin.svg" loading="lazy" animate="logo" alt="Logo Aarin" class="intg-aarin"/>
-                                    <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6614057f81e1941ab6df2b65_rede.svg" loading="lazy" animate="logo" alt="Logo Rede" class="intg-rede"/>
-                                    <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6614057c94fd5fef282d850a_stripe.svg" loading="lazy" animate="logo" alt="Logo Stripe" class="intg-stripe"/>
-                                    <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6614057affe3dc6a18cf77ef_banco%20inter.svg" loading="lazy" animate="logo" alt="Logo Banco Inter" class="intg-inter"/>
-                                    <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6614057a5130790eafe9aaae_pagseguro.svg" loading="lazy" animate="logo" alt="Logo PagSeguro" class="intg-pagseguro"/>
-                                    <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6614057af1bc5e3969bf83e8_cielo.svg" loading="lazy" animate="logo" alt="Logo Cielo" class="intg-cielo"/>
-                                    <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6614057a64595212332b1f7d_getnet.svg" loading="lazy" animate="logo" alt="Logo Getnet" class="intg-getnet"/>
-                                    <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6614057a2000af95fcad3948_pagar-me.svg" loading="lazy" animate="logo" alt="Logo Pagar.me" class="intg-pagarme"/>
-                                    <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6614057bf69e8bbd18c1a56e_konduto.svg" loading="lazy" animate="logo" alt="Logo Konduto" class="intg-konduto"/>
-                                    <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6614057ad5148746ac27c89e_integracoes-line-1.svg" loading="lazy" alt="" class="integracao-animate-line"/>
-                                    <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6614057a64595212332b1f76_integracoes-line-2.svg" loading="lazy" alt="" class="integracao-animate-line"/>
-                                    <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6614057a3e6f9e9f132f411c_integracoes-line-3.svg" loading="lazy" alt="" class="integracao-animate-line"/>
-                                    <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6614057a3a784b2cb526c677_integracoes-line-4.svg" loading="lazy" alt="" class="integracao-animate-line"/>
-                                </div>
-                                <div class="integracoes-mobile">
-                                    <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6617fb174e60225b9171909d_integracoes-mobile.svg" loading="lazy" alt="Integrações Definity" class="_100vw"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <section animate="fade" class="section-marquee is-gradient-horizontal">
                 <div data-w-id="81329b81-0715-483b-914f-cac7874f2672" class="marquee-animate">
                     <div class="marquee-line-wrapper">
@@ -792,7 +714,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-solucoes p-sec-6">
+             <section class="section-solucoes p-sec-6">
                 <div class="padding-global">
                     <div class="container-large">
                         <div class="row justify-center">
@@ -811,7 +733,7 @@
                                             </svg>
                                         </div>
                                         <h2 class="heading-style-h2">Soluções</h2>
-                                        <div class="text-size-medium">Soluções poderosas para todos os tipos de empresa</div>
+                                        <div class="text-size-medium">Mantenha-se no controle total</div>
                                     </div>
                                 </div>
                             </div>
@@ -819,46 +741,46 @@
                         <div class="row">
                             <div class="col col-lg-12">
                                 <div class="grid-3 m-tp-4">
-                                    <a href="/hopy-split" class="card-solucao-wrapper w-inline-block">
+                                    <a href="/bridge" class="card-solucao-wrapper w-inline-block">
                                         <div class="solucao-image">
                                             <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660dfeab52d333384dba7839_Hopy%20Split%20-%20Ilustration.svg" loading="lazy" alt="Ilustração Hopy Split"/>
                                         </div>
                                         <div class="solucao-info">
                                             <div class="solucao-name text-color-gradient">
-                                                hopy
-                                                <span class="text-weight-medium">Split</span>
+                                                definity
+                                                <span class="text-weight-medium">Bridge</span>
                                             </div>
-                                            <div>Gateway White Label com Multi-Aquirência e Split Inteligente</div>
+                                            <div>Compre Bitcoin de forma anônima e simples usando Pix, sem a burocracia tradicional</div>
                                             <div class="button is-opacity is-small">
                                                 <div>Saiba mais</div>
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="/hopy-hub" class="card-solucao-wrapper w-inline-block">
+                                    <a href="/mix" class="card-solucao-wrapper w-inline-block">
                                         <div class="solucao-image">
                                             <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660dfeab278fec35940895b9_Hopy%20Hub%20-%20Illustration.svg" loading="lazy" alt="Ilustração Hopy Hub"/>
                                         </div>
                                         <div class="solucao-info">
                                             <div class="solucao-name text-color-gradient">
-                                                hopy
-                                                <span class="text-weight-medium">Hub</span>
+                                                definity
+                                                <span class="text-weight-medium">Mix</span>
                                             </div>
-                                            <div>Tecnologia de múltiplas Integrações de pagamentos com Smart Routing</div>
+                                            <div>Ofusque rastros de transações, eliminando qualquer vínculo que possa comprometer sua identidade</div>
                                             <div class="button is-opacity is-small">
                                                 <div>Saiba mais</div>
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="/hopy-checkout" class="card-solucao-wrapper w-inline-block">
+                                    <a href="/vault" class="card-solucao-wrapper w-inline-block">
                                         <div class="solucao-image">
                                             <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660dfeab0ea3bb08db1d212d_Hopy%20Checkout%20-%20Illustration.svg" loading="lazy" alt="Ilustração Hopy Checkout"/>
                                         </div>
                                         <div class="solucao-info">
                                             <div class="solucao-name text-color-gradient">
-                                                hopy
-                                                <span class="text-weight-medium">Checkout</span>
+                                                definity
+                                                <span class="text-weight-medium">Vault</span>
                                             </div>
-                                            <div>Plataforma de Checkout personalizada com a sua marca</div>
+                                            <div>Utilize a tecnologia Multisig e time-lock para manter seu Bitcoin fora do alcance de invasores</div>
                                             <div class="button is-opacity is-small">
                                                 <div>Saiba mais</div>
                                             </div>
@@ -870,6 +792,38 @@
                     </div>
                 </div>
             </section>
+            <div class="divider"></div>
+            <section animate="fade" class="section-clientes p-sec-6">
+                <div class="logos-animate">
+                    <div class="logos-wrapper">
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7d7b133fd05580ec1_a55.svg" loading="lazy" alt="Logo a55"/>
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6697ce6de23ea02d62e2a5e1_logo-dompgto.png" loading="lazy" alt=""/>
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7937c23d625ca5666_gremio.svg" loading="lazy" alt="Logo Grêmio"/>
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7518d8bce4d5383ea_box-delivery.svg" loading="lazy" alt="Logo Box Delivery"/>
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b8e0288dac32fb0a6d_zouti.svg" loading="lazy" alt="Logo Zouti"/>
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7ea9fecd145d445e7_cazco-digital.svg" loading="lazy" alt="Logo Cazco Digital"/>
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7988413d90bfa61aa_get-commerce.svg" loading="lazy" alt="Logo Get Commerce"/>
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6697ce6dee68c233e197de4c_logo-paggx.png" loading="lazy" alt=""/>
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6793c33ad68d1fe63309428b_Pay2m-2.png" loading="lazy" alt=""/>
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7a7f220099e1d6aa2_pagou-ai.svg" loading="lazy" alt="Logo Pagou.ai"/>
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6758986a4342e9bda58938fd_logo-paguesafe.png" loading="lazy" alt=""/>
+                    </div>
+                    <div class="logos-wrapper">
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7d7b133fd05580ec1_a55.svg" loading="lazy" alt="Logo a55"/>
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6697ce6de23ea02d62e2a5e1_logo-dompgto.png" loading="lazy" alt=""/>
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7937c23d625ca5666_gremio.svg" loading="lazy" alt="Logo Grêmio"/>
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7518d8bce4d5383ea_box-delivery.svg" loading="lazy" alt="Logo Box Delivery"/>
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b8e0288dac32fb0a6d_zouti.svg" loading="lazy" alt="Logo Zouti"/>
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7ea9fecd145d445e7_cazco-digital.svg" loading="lazy" alt="Logo Cazco Digital"/>
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7988413d90bfa61aa_get-commerce.svg" loading="lazy" alt="Logo Get Commerce"/>
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6697ce6dee68c233e197de4c_logo-paggx.png" loading="lazy" alt=""/>
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b73e2284db42338d3a_pay2m.svg" loading="lazy" alt="Logo Pay2m"/>
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b7a7f220099e1d6aa2_pagou-ai.svg" loading="lazy" alt="Logo Pagou.ai"/>
+                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660ec5b73fe9ad962bca2c30_abmex.svg" loading="lazy" alt="Logo Abmexx"/>
+                    </div>
+                </div>
+            </section>
+            <div class="divider"></div>
             <section class="section-dashboard">
                 <div class="padding-global">
                     <div class="container-large">
@@ -953,30 +907,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-api p-sec-7">
-                <div class="padding-global">
-                    <div class="container-large">
-                        <div class="row align-center space-between">
-                            <div class="col col-lg-6 col-md-12">
-                                <div animate="fade-left" class="api-home-image">
-                                    <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660dfeab0ea3bb08db1d216f_API%20Ilustration.svg" loading="lazy" alt="Ilustração tela API Definity"/>
-                                </div>
-                            </div>
-                            <div class="col col-lg-5 col-md-12">
-                                <div animate="fade-up" class="api-home-content">
-                                    <div class="title-content">
-                                        <div class="title-left" animate="fade-up">
-                                            <div class="title-span">Sobre a API</div>
-                                            <h2 class="heading-style-h2">Documentação feita para desenvolvedores</h2>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="button w-button">Leia a documentação</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
             <div class="divider"></div>
             <section class="section-depoimentos p-sec-7">
                 <div class="padding-global">
@@ -1021,7 +952,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-faq p-sec-7">
+                        <section class="section-faq p-sec-7">
                 <div class="padding-global">
                   <div class="container-large">
                     <div class="row justify-center">
@@ -1123,7 +1054,7 @@
                                 <div class="contato-cta is-gradient-horizontal">
                                     <div class="contato-content">
                                         <div class="text-size-medium">Entre em contato com a Definity</div>
-                                        <h2 class="heading-style-h1">Crie o futuro dos pagamentos com a gente</h2>
+                                        <h2 class="heading-style-h1">Crie o futuro do dinheiro conosco</h2>
                                         <a href="/contato" class="button is-dark w-button">Quero saber mais</a>
                                     </div>
                                     <div class="contato-image">
@@ -1194,15 +1125,15 @@
                                     <div class="footer-right">
                                         <div class="horizontal-wrapper gap-4 align-top">
                                             <div class="link-list hide-sm">
-                                                <a href="/hopy-split" class="link">Hopy Split</a>
-                                                <a href="/hopy-hub" class="link">Hopy Hub</a>
-                                                <a href="/hopy-checkout" class="link">Hopy Checkout</a>
+                                                <a href="/bridge" class="link">Definity Bridge</a>
+                                                <a href="/mix" class="link">Definity Mix</a>
+                                                <a href="/vault" class="link">Definity Vault</a>
                                             </div>
                                             <div class="link-list hide-sm">
-                                                <a href="/solucoes" class="link">Soluções</a>
-                                                <a href="/integracoes" class="link">Integrações</a>
+                                                
+                                                
                                                 <a href="/quem-somos" class="link">Quem somos</a>
-                                                <a href="/desenvolvimento" class="link">Desenvolvimento</a>
+                                                
                                                 <a href="/contato" class="link">Contato</a>
                                             </div>
                                             <div class="link-list align-center">
