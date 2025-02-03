@@ -280,39 +280,7 @@
                     <div class="video-hold">
                         <div id="embed-video" class="embed-video">
                             <div class="w-embed w-script">
-                                <script>
-                                document.querySelector(".modal-close").addEventListener("click", stopVideo);
-
-                                var tag = document.createElement("script");
-
-                                tag.src = "https://www.youtube.com/iframe_api";
-                                var firstScriptTag = document.getElementsByTagName("script")[0];
-                                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-                                var player;
-                                function onYouTubeIframeAPIReady() {
-                                    player = new YT.Player("embed-video", {
-                                        height: "100%",
-                                        width: "100%",
-                                        videoId: "kXkLwKu2Cyo",
-                                    });
-                                }
-
-                                function onPlayerReady(event) {
-                                    event.target.playVideo();
-                                }
-
-                                var done = false;
-                                function onPlayerStateChange(event) {
-                                    if (event.data == YT.PlayerState.PLAYING && !done) {
-                                        setTimeout(stopVideo, 6000);
-                                        done = true;
-                                    }
-                                }
-                                function stopVideo() {
-                                    player.stopVideo();
-                                }
-                                </script>
+                               
                             </div>
                         </div>
                     </div>
@@ -592,10 +560,31 @@
                     <div class="container-large">
                         <div class="row justify-center">
                             <div class="col col-lg-12">
-                                <div data-w-id="818523c7-90bf-563c-1f20-111c666d5a30" data-is-ix2-target="1" class="lottie" data-animation-type="lottie" data-src="anim.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="11.011010562523365" data-duration="0"></div>
-                                <div class="fluxo-mobile">
-                                    <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6615af74fcb3aebee5986b0c_Hopy%20Hub%20-%20Fluxo%20Mobile.svg" loading="lazy" alt="Hopy Hub Fluxo"/>
+                                <div class="col col-lg-12">
+                                    <img src="/media/diagram-5.png" class="centeruuio desktop-only" loading="lazy" alt="diagram image">
+                                    <style>
+                                        .centeruuio {
+                                            display: block;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            width: 80%;
+                                            padding-top: 100px;
+                                            padding-bottom: 70px;
+                                        }
+                                
+                                        /* Esconde a imagem do PC quando a tela for menor que 768px (padrão para mobile) */
+                                        @media (max-width: 768px) {
+                                            .desktop-only {
+                                                display: none;
+                                            }
+                                        }
+                                    </style>
+                                    <div class="fluxo-mobile">
+                                        <img src="/media/diagramobile.png" loading="lazy" alt="diagram mobile" />
+                                    </div>
                                 </div>
+                                
+                                
                             </div>
                         </div>
                         <div class="row">
@@ -743,7 +732,7 @@
                                 <div class="grid-3 m-tp-4">
                                     <a href="/bridge" class="card-solucao-wrapper w-inline-block">
                                         <div class="solucao-image">
-                                            <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660dfeab52d333384dba7839_Hopy%20Split%20-%20Ilustration.svg" loading="lazy" alt="Ilustração Hopy Split"/>
+                                            <img src="/media/bridgeeds.png" loading="lazy" alt="Ilustração Hopy Split"/>
                                         </div>
                                         <div class="solucao-info">
                                             <div class="solucao-name text-color-gradient">
@@ -758,7 +747,7 @@
                                     </a>
                                     <a href="/mix" class="card-solucao-wrapper w-inline-block">
                                         <div class="solucao-image">
-                                            <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660dfeab278fec35940895b9_Hopy%20Hub%20-%20Illustration.svg" loading="lazy" alt="Ilustração Hopy Hub"/>
+                                            <img src="/media/miiix.png" loading="lazy" alt="Ilustração Hopy Hub"/>
                                         </div>
                                         <div class="solucao-info">
                                             <div class="solucao-name text-color-gradient">
@@ -773,7 +762,7 @@
                                     </a>
                                     <a href="/vault" class="card-solucao-wrapper w-inline-block">
                                         <div class="solucao-image">
-                                            <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660dfeab0ea3bb08db1d212d_Hopy%20Checkout%20-%20Illustration.svg" loading="lazy" alt="Ilustração Hopy Checkout"/>
+                                            <img src="/media/VAULTL.png" loading="lazy" alt="Ilustração Hopy Checkout"/>
                                         </div>
                                         <div class="solucao-info">
                                             <div class="solucao-name text-color-gradient">
@@ -792,7 +781,24 @@
                     </div>
                 </div>
             </section>
-            <div class="divider"></div>
+            <section class="section-dashboard">
+                <div class="padding-global">
+                    <div class="container-large">
+                        <div class="row justify-center">
+                            <div class="col col-lg-12">
+                                <div class="dashboard-image">
+                                    
+                                    <div data-w-id="d4882ac7-7d8c-2217-0ed2-cad7ea50ef1b" class="dashboard-trigger">
+                                        <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(70deg) rotateY(0) rotateZ(null) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(70deg) rotateY(0) rotateZ(null) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(70deg) rotateY(0) rotateZ(null) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(70deg) rotateY(0) rotateZ(null) skew(0, 0);transform-style:preserve-3d;opacity:0" class="dashboard-full">
+                                            <img src="/media/dashbrr.png" loading="lazy" sizes="(max-width: 479px) 82vw, (max-width: 1220px) 86vw, 1050px" alt="Dashboard Hopy Hub"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section animate="fade" class="section-clientes p-sec-6">
                 <div class="logos-animate">
                     <div class="logos-wrapper">
@@ -823,89 +829,7 @@
                 </div>
             </section>
             <div class="divider"></div>
-            <section class="section-dashboard">
-                <div class="padding-global">
-                    <div class="container-large">
-                        <div class="row justify-center">
-                            <div class="col col-lg-12">
-                                <div class="dashboard-image">
-                                    <div style="opacity:0;-webkit-transform:translate3d(0, -30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="dashborad-right">
-                                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/6633e5753c8617326329f967_EN%20-%20dashboard-vendas.png" loading="lazy" alt="Dashboard sales modal"/>
-                                    </div>
-                                    <div style="opacity:0;-webkit-transform:translate3d(0, -30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="dashborad-left">
-                                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660eb173630914460408484f_dashboard-indices.webp" loading="lazy" alt="Dashboard modal índices"/>
-                                    </div>
-                                    <div data-w-id="d4882ac7-7d8c-2217-0ed2-cad7ea50ef1b" class="dashboard-trigger">
-                                        <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(70deg) rotateY(0) rotateZ(null) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(70deg) rotateY(0) rotateZ(null) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(70deg) rotateY(0) rotateZ(null) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(70deg) rotateY(0) rotateZ(null) skew(0, 0);transform-style:preserve-3d;opacity:0" class="dashboard-full">
-                                            <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660eb1739719fcef8a87b1f0_dashboard-full.webp" loading="lazy" sizes="(max-width: 479px) 82vw, (max-width: 1220px) 86vw, 1050px" srcset="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660eb1739719fcef8a87b1f0_dashboard-full-p-500.webp 500w, https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660eb1739719fcef8a87b1f0_dashboard-full-p-800.webp 800w, https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660eb1739719fcef8a87b1f0_dashboard-full.webp 1050w" alt="Dashboard Hopy Hub"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div animate="fade-up" class="col col-lg-6 col-md-12">
-                                <div class="bento-vertical-wraper">
-                                    <div class="card">
-                                        <div class="card-numbers-wrapper is-horizontal">
-                                            <div class="card-horizontal-image">
-                                                <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660dfeabcc7e887157dde4ea_Volume%20Image.svg" loading="lazy" alt="Ilustração volume de vendas"/>
-                                            </div>
-                                            <div class="card-horizontal-info">
-                                                <div>mais de R$</div>
-                                                <div class="big-number">
-                                                    4 
-                                                    <span class="big-number is-small">bilhões</span>
-                                                </div>
-                                                <div class="text-color-dark-gray">em volume</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-numbers-wrapper is-horizontal">
-                                            <div class="card-horizontal-image">
-                                                <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660dfeab0856d26785f23677_Clientes%20Image.svg" loading="lazy" alt="Ilustração clientes"/>
-                                            </div>
-                                            <div class="card-horizontal-info padding-left">
-                                                <div>mais de</div>
-                                                <div class="big-number">125 mil</div>
-                                                <div class="text-color-dark-gray">clientes indiretos</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div animate="fade-up" class="col col-lg-6 col-md-12">
-                                <div class="bento-horizontal-wrapper">
-                                    <div class="card">
-                                        <div class="card-numbers-wrapper is-vertical">
-                                            <div class="card-vertical-image">
-                                                <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660dfeabd9f5e6c48c4233a9_Transa%C3%A7%C3%B5es%20Image.svg" loading="lazy" alt="Ilustração transações"/>
-                                            </div>
-                                            <div class="card-vertical-info padding">
-                                                <div class="big-number">+46</div>
-                                                <div class="big-number is-small">milhões</div>
-                                                <div class="text-color-dark-gray">transações nos últimos 12 meses</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-numbers-wrapper is-vertical">
-                                            <div class="card-vertical-image">
-                                                <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660dfeabdf0f0708e1b48ce5_Integra%C3%A7%C3%B5es%20Image.svg" loading="lazy" alt="Ilustração integrações Definity"/>
-                                            </div>
-                                            <div class="card-vertical-info padding">
-                                                <div class="big-number">+120</div>
-                                                <div class="text-color-dark-gray">combinações entre as integrações de pagamentos</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        
             
             <div class="divider"></div>
             <section class="section-depoimentos p-sec-7">
@@ -1045,26 +969,7 @@
                     </div>
                 </div>
             </section>
-              <section class="section-contato p-sec-7">
-                <div class="padding-global">
-                    <div class="container-large">
-                        <div class="row">
-                            <div class="col col-lg-12">
-                                <div class="contato-cta is-gradient-horizontal">
-                                    <div class="contato-content">
-                                        <div class="text-size-medium">Entre em contato com a Definity</div>
-                                        <h2 class="heading-style-h1">Crie o futuro do dinheiro conosco</h2>
-                                        <a href="/contato" class="button is-dark w-button">Quero saber mais</a>
-                                    </div>
-                                    <div class="contato-image">
-                                        <img src="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660d69bad8621b2c02f017bb_cta-image.png" loading="lazy" sizes="(max-width: 479px) 86vw, (max-width: 991px) 90vw, 54vw" srcset="https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660d69bad8621b2c02f017bb_cta-image-p-500.webp 500w, https://cdn.prod.website-files.com/660c0a255c6114629a3f6e7c/660d69bad8621b2c02f017bb_cta-image.png 736w" alt="Itens dashboard sistema Definity"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+             
             <div class="divider"></div>
             <footer class="footer">
                 <div class="padding-global">
