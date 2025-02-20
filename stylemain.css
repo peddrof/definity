@@ -3886,14 +3886,36 @@ html {
     background-color: var(--color--white);
     color: var(--black);
     font-size: var(--font-size--medium);
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: flex-start;  /* Aligns content to the left */
+    align-items: center;          /* Vertically centers the items */
     margin-bottom: 1rem;
     padding: 1rem 1.5rem;
     font-weight: 400;
     transition: all .2s;
     display: flex;
+    width: 100%;
+    gap: 0.25rem;  /* Reduced the gap between the SVG and "TELEGRAM" */
   }
+  
+  .cta-whatsapp .text-weight-medium.hide-xs {
+    margin-left: 0.5rem;  /* Increased the gap between "TELEGRAM" and "@definityspace" */
+  }
+  
+  
+  
+  .cta-whatsapp .ico-46 {
+    display: flex;
+    justify-content: center;      /* Centers the SVG horizontally */
+    align-items: center;          /* Vertically centers the SVG */
+    width: 46px;                  /* Ensures the SVG container width is 46px */
+    height: 46px;                 /* Ensures the SVG container height is 46px */
+  }
+  
+  .cta-whatsapp svg {
+    width: 46px;  /* Ensures the SVG width is 46px */
+    height: 46px; /* Ensures the SVG height is 46px */
+  }
+  
   
   .cta-whatsapp:hover {
     border-color: var(--color--primary-verde);
@@ -4254,8 +4276,11 @@ html {
     justify-content: flex-start;
     align-items: center;
     display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
   }
-  
+
   .logos-wrapper {
     grid-column-gap: 6rem;
     grid-row-gap: 6rem;
@@ -4263,6 +4288,7 @@ html {
     justify-content: flex-start;
     align-items: center;
     display: flex;
+    width: max-content;
   }
   
   .title-content {
@@ -5031,7 +5057,7 @@ html {
     background-color: #00e9d1;
     width: 10px;
     height: 10px;
-    top: 110px;
+    top: 10px;
     left: 322px;
   }
   
@@ -5047,7 +5073,7 @@ html {
     background-color: #00e9d1;
     width: 10px;
     height: 10px;
-    top: 255px;
+    top: 355px;
     left: 140px;
   }
   
@@ -5055,21 +5081,21 @@ html {
     background-color: #00e9d1;
     width: 10px;
     height: 10px;
-    inset: 44% auto 0% 0%;
+    inset: 54% auto 0% 0%;
   }
   
   .intg-dot.hopyhub-azul {
     background-color: #1e77b7;
     width: 10px;
     height: 10px;
-    inset: 43% 0% 0% auto;
+    inset: 53% 0% 0% auto;
   }
   
   .intg-dot.hopyhub-amarelo {
     background-color: #c5d286;
     width: 10px;
     height: 10px;
-    inset: 42% 0% 0% auto;
+    inset: 52% 0% 0% auto;
   }
   
   .integracoes-animate {
@@ -5270,26 +5296,27 @@ html {
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    inset: 296px 0% 0%;
-  }
-  
-  .hopyhub-circle-md {
+    inset: 480px 0% 0%; /* Alterado de 296px para 350px */
+}
+
+.hopyhub-circle-md {
     width: 773px;
     height: 773px;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    inset: 193px 0% 0%;
-  }
-  
-  .hopyhub-circle-lg {
+    inset: 385px 0% 0%; /* Alterado de 193px para 250px */
+}
+
+.hopyhub-circle-lg {
     width: 985px;
     height: 985px;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    inset: 84px 0% 0%;
-  }
+    inset: 280px 0% 0%; /* Alterado de 84px para 150px */
+}
+
   
   .dashboard-trigger {
     perspective: 2000px;
@@ -6701,11 +6728,7 @@ html {
       padding: 3rem 1.75rem 2rem;
     }
   
-    .cta-whatsapp {
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-    }
+    
   
     .text-color-dark-gray.text-align-center.text-size-large {
       line-height: 25px;
