@@ -615,26 +615,26 @@
 
                           /* Notificação de cópia (agora aparece FORA do form) */
                           .copy-notification {
-                            position: fixed;
-                            top: -100px;
-                            left: 50%;
-                            transform: translateX(-50%);
-                            background: rgba(255, 255, 255, 0.05);
-                            backdrop-filter: blur(10px);
-                            padding: 15px 20px;
-                            border-radius: 15px;
-                            text-align: center;
-                            color: #ffffff;
-                            font-size: 14px;
-                            font-family: "Rubik", sans-serif;
-                            box-shadow: 0px 10px 20px rgba(167, 167, 167, 0.123);
-                            width: 90%;
-                            max-width: 400px;
-                            opacity: 0;
-                            visibility: hidden;
-                            transition: all 0.5s ease-in-out;
-                            z-index: 999999; /* Garante que está acima do conteúdo */
-                          }
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 15px 20px;
+  border-radius: 15px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+  box-shadow: 0px 10px 20px rgba(167, 167, 167, 0.123);
+  width: 90%;
+  max-width: 400px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  z-index: 2147483647;
+}
 
                           /* Botão de concluir compra */
                           .complete-btn {
