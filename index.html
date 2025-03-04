@@ -1694,153 +1694,89 @@ body {
 
     <script>
       window.addEventListener("DOMContentLoaded", (event) => {
-        // Disable browser scroll restoration to prevent snapping
-    if ('scrollRestoration' in history) {
-      history.scrollRestoration = 'manual';
-    }
+        // //Link timelines to scroll position
+        // function createScrollTrigger(triggerElement, timeline) {
+        //   ScrollTrigger.create({
+        //     trigger: triggerElement,
+        //     start: "top 60%",
+        //     onEnter: () => timeline.play(),
+        //   });
+        // }
 
-    // Link timelines to scroll position
-    function createScrollTrigger(triggerElement, timeline) {
-      ScrollTrigger.create({
-        trigger: triggerElement,
-        start: "top 60%", // Trigger when the element's top is 60% from the top of the viewport
-        end: "bottom top", // Ensure smooth completion
-        scroller: "body", // Explicitly define the scroller
-        invalidateOnRefresh: true, // Recalculate positions on resize/refresh
-        onEnter: () => timeline.play(),
-        // Prevent interference with scroll position
-        toggleActions: "play none none none", // Ensure no unwanted behavior on leave/reverse
-      });
-    }
+        // //Classes
+        // $(
+        //   ".hero-content, .grid-4, .grid-3, .grid-2, .faq-wrapper, .video, .fluxo-mobile"
+        // ).each(function (index) {
+        //   let tl = gsap.timeline({ paused: true });
+        //   tl.from($(this).find("> *"), {
+        //     opacity: 0,
+        //     y: "2rem",
+        //     duration: 0.8,
+        //     ease: "power2.out",
+        //     stagger: { amount: 0.4 },
+        //   });
+        //   createScrollTrigger($(this), tl);
+        // });
 
-    // Classes (Fade animations for sections)
-    $(".hero-content, .grid-4, .grid-3, .grid-2, .faq-wrapper, .video, .fluxo-mobile").each(function (index) {
-      let tl = gsap.timeline({ paused: true });
-      tl.from($(this).find("> *"), {
-        opacity: 0,
-        y: "2rem",
-        duration: 0.8,
-        ease: "power2.out",
-        stagger: { amount: 0.4 },
-      });
-      createScrollTrigger($(this), tl);
-    });
+        // //Footer
+        // $(".footer").each(function (index) {
+        //   let tl = gsap.timeline({ paused: true });
+        //   tl.from($(this).find("> *"), {
+        //     opacity: 0,
+        //     y: "2rem",
+        //     duration: 0.8,
+        //     ease: "power2.out",
+        //     stagger: { amount: 0.4 },
+        //   });
+        //   createScrollTrigger($(this), tl);
+        // });
 
-    // Footer
-    $(".footer").each(function (index) {
-      let tl = gsap.timeline({ paused: true });
-      tl.from($(this).find("> *"), {
-        opacity: 0,
-        y: "2rem",
-        duration: 0.8,
-        ease: "power2.out",
-        stagger: { amount: 0.4 },
-      });
-      createScrollTrigger($(this), tl);
-    });
+        // //Contato
+        // $(".section-contato").each(function (index) {
+        //   let tl = gsap.timeline({ paused: true });
+        //   tl.from($(this), {
+        //     opacity: 0,
+        //     y: "4rem",
+        //     duration: 0.8,
+        //     ease: "power2.out",
+        //     stagger: { amount: 0.4 },
+        //   });
+        //   createScrollTrigger($(this), tl);
+        // });
 
-    // Contato
-    $(".section-contato").each(function (index) {
-      let tl = gsap.timeline({ paused: true });
-      tl.from($(this), {
-        opacity: 0,
-        y: "4rem",
-        duration: 0.8,
-        ease: "power2.out",
-        stagger: { amount: 0.4 },
-      });
-      createScrollTrigger($(this), tl);
-    });
-
-    // Integrações Home
-    $(".section-integracoes").each(function (index) {
-      let tl = gsap.timeline({ paused: true });
-      tl.from($(this).find(".integracao-animate-line"), {
-        opacity: 0,
-        y: "2rem",
-        duration: 0.8,
-        ease: "power2.out",
-        stagger: { amount: 0.4 },
-      });
-      tl.from(
-        $(this).find(".intg-dot"),
-        {
-          opacity: 0,
-          duration: 0.8,
-          ease: "power2.out",
-          stagger: { amount: 0.4 },
-        },
-        "-=0.8"
-      );
-      tl.from(
-        $(this).find("[animate=logo]"),
-        {
-          opacity: 0,
-          x: "-1rem",
-          duration: 0.8,
-          ease: "power2.out",
-          stagger: { amount: 0.4 },
-        },
-        "-=0.6"
-      );
-      createScrollTrigger($(this), tl);
-    });
-
-    // Explicitly handle the marquee section's fade-in with ScrollTrigger
-    $(".section-marquee").each(function (index) {
-      let tl = gsap.timeline({ paused: true });
-      tl.from($(this).find("> *"), {
-        opacity: 0,
-        y: "2rem",
-        duration: 0.8,
-        ease: "power2.out",
-        stagger: { amount: 0.4 },
-      });
-      createScrollTrigger($(this), tl);
-    });
-
-    // Ensure the marquee carousel animation runs independently
-    function startMarquee() {
-      let marqueeWrapper = document.querySelector(".marquee-animate");
-      if (!marqueeWrapper) return; // Exit if element not found
-
-      marqueeWrapper.style.overflowX = "hidden";
-      marqueeWrapper.style.width = "100%";
-      let marqueeContent = marqueeWrapper.innerHTML;
-      let duplicateContent = marqueeContent + marqueeContent;
-      marqueeWrapper.innerHTML = duplicateContent;
-
-      let wrapperWidth = marqueeWrapper.scrollWidth / 2;
-
-      gsap.set(marqueeWrapper, { x: 0 });
-
-      gsap.to(marqueeWrapper, {
-        x: -wrapperWidth,
-        duration: 30,
-        ease: "none",
-        repeat: -1,
-        onUpdate: function () {
-          let progress = Math.abs(gsap.getProperty(marqueeWrapper, "x")) % wrapperWidth;
-          if (progress === 0) {
-            gsap.set(marqueeWrapper, { x: 0 });
-          }
-        },
-      });
-    }
-
-    // Run marquee animation immediately (not tied to ScrollTrigger)
-    startMarquee();
-
-    // Prevent GSAP ScrollTrigger from interfering with scroll restoration
-    gsap.config({
-      autoRefreshEvents: "DOMContentLoaded,load,resize", // Avoid aggressive refreshes
-    });
-
-    // Ensure passive event listeners for scroll
-    window.addEventListener('scroll', () => {
-      // No-op listener to ensure passive handling
-    }, { passive: true });
-
+        // //Integrações Home
+        // $(".section-integracoes").each(function (index) {
+        //   let tl = gsap.timeline({ paused: true });
+        //   tl.from($(this).find(".integracao-animate-line"), {
+        //     opacity: 0,
+        //     y: "2rem",
+        //     duration: 0.8,
+        //     ease: "power2.out",
+        //     stagger: { amount: 0.4 },
+        //   });
+        //   tl.from(
+        //     $(this).find(".intg-dot"),
+        //     {
+        //       opacity: 0,
+        //       duration: 0.8,
+        //       ease: "power2.out",
+        //       stagger: { amount: 0.4 },
+        //     },
+        //     "-=0.8"
+        //   );
+        //   tl.from(
+        //     $(this).find("[animate=logo]"),
+        //     {
+        //       opacity: 0,
+        //       x: "-1rem",
+        //       duration: 0.8,
+        //       ease: "power2.out",
+        //       stagger: { amount: 0.4 },
+        //     },
+        //     "-=0.6"
+        //   );
+        //   createScrollTrigger($(this), tl);
+        // });
 
         // //Fade
         $("[animate=fade]").each(function (index) {
