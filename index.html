@@ -88,19 +88,10 @@
     <meta name="theme-color" content="#080C0F" />
 
     <style>
-      /* Add this at the top of your existing CSS */
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
+      html, body {
   overflow-x: hidden;
-}
-
-img {
+  width: 100%;
   max-width: 100%;
-  height: auto;
 }
       ::selection {
         color: #fff;
@@ -1232,26 +1223,35 @@ img {
         
           <style id="k7p9m2q4">
             .carousel-section {
-              width: 100%;
-              overflow: hidden;
-              margin: 96px 0; /* Margem superior e inferior mantida */
-            }
-            
-            .carousel-container {
-              width: 100%;
-            }
-            
-            .carousel-track {
-              display: flex;
-              width: fit-content; /* Garante que o track tenha o tamanho exato do conteúdo */
-              animation: x9k2v5m7 18s linear infinite; /* Duração base - ajuste aqui para sintonia fina manual */
-            }
-            
-            .carousel-track img {
-              height: 60px; /* Tamanho mantido */
-              margin: 0 40px; /* Espaçamento horizontal mantido */
-              flex-shrink: 0;
-            }
+  width: 100%;
+  overflow-x: hidden;
+  margin: 96px 0;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  width: fit-content;
+  animation: x9k2v5m7 18s linear infinite;
+}
+
+.carousel-track img {
+  height: 60px;
+  margin: 0 40px;
+  flex-shrink: 0;
+  max-width: 100%; /* Ensure images don’t exceed viewport */
+}
+
+@media screen and (max-width: 479px) {
+  .carousel-track img {
+    margin: 0 20px; /* Reduce spacing on mobile */
+    height: 50px; /* Slightly smaller images for better fit */
+  }
+}
             
             @keyframes x9k2v5m7 {
               0% {
@@ -1759,30 +1759,31 @@ img {
           createScrollTrigger($(this), tl);
         });
         function startMarquee() {
-          let marqueeWrapper = document.querySelector(".marquee-animate");
-          let marqueeContent = marqueeWrapper.innerHTML; // Get original content
-          let duplicateContent = marqueeContent + marqueeContent; // Duplicate it
-          marqueeWrapper.innerHTML = duplicateContent; // Set duplicated content
+  let marqueeWrapper = document.querySelector(".marquee-animate");
+  marqueeWrapper.style.overflowX = "hidden"; // Ensure overflow is hidden
+  marqueeWrapper.style.width = "100%"; // Constrain width
+  let marqueeContent = marqueeWrapper.innerHTML;
+  let duplicateContent = marqueeContent + marqueeContent;
+  marqueeWrapper.innerHTML = duplicateContent;
 
-          let wrapperWidth = marqueeWrapper.scrollWidth / 2; // Half of the total width (since we duplicated)
+  let wrapperWidth = marqueeWrapper.scrollWidth / 2;
 
-          gsap.set(marqueeWrapper, { x: 0 });
+  gsap.set(marqueeWrapper, { x: 0 });
 
-          gsap.to(marqueeWrapper, {
-            x: -wrapperWidth, // Move by exactly half the total width
-            duration: 30, // Adjust timing for smooth movement
-            ease: "none", // Removes easing artifacts
-            repeat: -1,
-            onUpdate: function () {
-              // Ensure perfect loop by keeping movement strictly within the bounds
-              let progress =
-                Math.abs(gsap.getProperty(marqueeWrapper, "x")) % wrapperWidth;
-              if (progress === 0) {
-                gsap.set(marqueeWrapper, { x: 0 }); // Reset to prevent tiny shifts
-              }
-            },
-          });
-        }
+  gsap.to(marqueeWrapper, {
+    x: -wrapperWidth,
+    duration: 30,
+    ease: "none",
+    repeat: -1,
+    onUpdate: function () {
+      let progress =
+        Math.abs(gsap.getProperty(marqueeWrapper, "x")) % wrapperWidth;
+      if (progress === 0) {
+        gsap.set(marqueeWrapper, { x: 0 });
+      }
+    },
+  });
+}
 
         startMarquee();
 

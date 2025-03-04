@@ -2566,6 +2566,15 @@ html {
     margin-left: auto;
     margin-right: auto;
   }
+
+  @media screen and (max-width: 479px) {
+    .container-large {
+      width: 100%;
+      max-width: 100%;
+      padding-left: 15px; /* Add some padding for better spacing */
+      padding-right: 15px;
+    }
+  }
   
   .icon-embed-xsmall {
     flex-direction: column;
@@ -3517,6 +3526,9 @@ html {
   .section-marquee {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+    overflow: hidden; /* Already set, reinforcing */
+  width: 100%;
+  max-width: 100%;
   }
   
   .section-marquee.is-gradient-horizontal {
@@ -4268,6 +4280,16 @@ html {
     justify-content: flex-start;
     align-items: center;
     display: flex;
+    width: 100%; /* Ensure it doesn’t exceed viewport */
+  overflow: hidden;
+  }
+
+  @media screen and (max-width: 991px) {
+    .marquee-animate {
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+    }
   }
   
   .logos-animate {
@@ -5288,6 +5310,8 @@ html {
     display: flex;
     position: absolute;
     inset: 0%;
+    width: 100%; /* Ensure the container doesn’t exceed viewport */
+  overflow: hidden; /* Hide any overflow */
   }
   
   .hopyhub-circle-sm {
@@ -6016,10 +6040,36 @@ html {
     }
   
     .image-3 {
-      min-width: 985px;
-      min-height: 510px;
+      width: 100%; /* Make width responsive */
+      height: auto; /* Maintain aspect ratio */
+      max-width: 985px; /* Use max-width instead of min-width */
       position: absolute;
-      top: 90px;
+    }
+    
+    @media screen and (max-width: 991px) {
+      .hopyhub-hero-lines {
+        display: none; /* Already hidden in smaller breakpoints, no need to repeat */
+      }
+    
+      .image-3 {
+        width: 100%;
+        max-width: 985px;
+        height: auto;
+        position: absolute;
+        top: 90px;
+      }
+    }
+    
+    @media screen and (max-width: 479px) {
+      .hopyhub-hero-lines {
+        display: none; /* Already handled in your CSS, reinforcing here */
+      }
+    
+      .image-3 {
+        width: 100%;
+        max-width: 100%; /* Ensure it doesn’t exceed viewport */
+        height: auto;
+      }
     }
   
     .nav-mobile-wrapper {
