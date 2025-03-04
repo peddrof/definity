@@ -1627,7 +1627,7 @@ body {
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- Temporarily disable Lenis -->
-<!-- 
+
 <script
   data-id-scroll
   data-autoinit="true"
@@ -1645,16 +1645,17 @@ body {
   defer
   src="https://assets-global.website-files.com/645e0e1ff7fdb6dc8c85f3a2/64a5544a813c7253b90f2f50_lenis-offbrand.txt"
 ></script>
--->
 
-<!-- <script>
+<script>
   // Disable browser scroll restoration
   if ('scrollRestoration' in history) {
     history.scrollRestoration = 'manual';
   }
 </script> -->
 
-<!-- Add custom Lenis initialization script --><!--
+<!-- Add custom Lenis initialization script -->
+
+
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     // Ensure Lenis respects browser scroll behavior
@@ -1686,7 +1687,7 @@ body {
       const date = new Date();
       let year = date.getFullYear();
       document.querySelector(".year").innerHTML = year;
-    </script> -->
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script> -->
@@ -1778,20 +1779,20 @@ body {
         // });
 
         // //Fade
-        // $("[animate=fade]").each(function (index) {
-        //   let tl = gsap.timeline({
-        //     paused: true,
-        //   });
-        //   tl.from($(this).find("> *"), {
-        //     opacity: 0,
-        //     duration: 0.8,
-        //     ease: "power2.out",
-        //     stagger: {
-        //       amount: 0.6,
-        //     },
-        //   });
-        //   createScrollTrigger($(this), tl);
-        // });
+        $("[animate=fade]").each(function (index) {
+          let tl = gsap.timeline({
+            paused: true,
+          });
+          tl.from($(this).find("> *"), {
+            opacity: 0,
+            duration: 0.8,
+            ease: "power2.out",
+            stagger: {
+              amount: 0.6,
+            },
+          });
+          createScrollTrigger($(this), tl);
+        });
         function startMarquee() {
           let marqueeWrapper = document.querySelector(".marquee-animate");
           let marqueeContent = marqueeWrapper.innerHTML; // Get original content
