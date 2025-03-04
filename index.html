@@ -1694,89 +1694,89 @@ body {
 
     <script>
       window.addEventListener("DOMContentLoaded", (event) => {
-        // //Link timelines to scroll position
-        // function createScrollTrigger(triggerElement, timeline) {
-        //   ScrollTrigger.create({
-        //     trigger: triggerElement,
-        //     start: "top 60%",
-        //     onEnter: () => timeline.play(),
-        //   });
-        // }
+        //Link timelines to scroll position
+        function createScrollTrigger(triggerElement, timeline) {
+          ScrollTrigger.create({
+            trigger: triggerElement,
+            start: "top 60%",
+            onEnter: () => timeline.play(),
+          });
+        }
 
-        // //Classes
-        // $(
-        //   ".hero-content, .grid-4, .grid-3, .grid-2, .faq-wrapper, .video, .fluxo-mobile"
-        // ).each(function (index) {
-        //   let tl = gsap.timeline({ paused: true });
-        //   tl.from($(this).find("> *"), {
-        //     opacity: 0,
-        //     y: "2rem",
-        //     duration: 0.8,
-        //     ease: "power2.out",
-        //     stagger: { amount: 0.4 },
-        //   });
-        //   createScrollTrigger($(this), tl);
-        // });
+        //Classes
+        $(
+          ".hero-content, .grid-4, .grid-3, .grid-2, .faq-wrapper, .video, .fluxo-mobile"
+        ).each(function (index) {
+          let tl = gsap.timeline({ paused: true });
+          tl.from($(this).find("> *"), {
+            opacity: 0,
+            y: "2rem",
+            duration: 0.8,
+            ease: "power2.out",
+            stagger: { amount: 0.4 },
+          });
+          createScrollTrigger($(this), tl);
+        });
 
-        // //Footer
-        // $(".footer").each(function (index) {
-        //   let tl = gsap.timeline({ paused: true });
-        //   tl.from($(this).find("> *"), {
-        //     opacity: 0,
-        //     y: "2rem",
-        //     duration: 0.8,
-        //     ease: "power2.out",
-        //     stagger: { amount: 0.4 },
-        //   });
-        //   createScrollTrigger($(this), tl);
-        // });
+        //Footer
+        $(".footer").each(function (index) {
+          let tl = gsap.timeline({ paused: true });
+          tl.from($(this).find("> *"), {
+            opacity: 0,
+            y: "2rem",
+            duration: 0.8,
+            ease: "power2.out",
+            stagger: { amount: 0.4 },
+          });
+          createScrollTrigger($(this), tl);
+        });
 
-        // //Contato
-        // $(".section-contato").each(function (index) {
-        //   let tl = gsap.timeline({ paused: true });
-        //   tl.from($(this), {
-        //     opacity: 0,
-        //     y: "4rem",
-        //     duration: 0.8,
-        //     ease: "power2.out",
-        //     stagger: { amount: 0.4 },
-        //   });
-        //   createScrollTrigger($(this), tl);
-        // });
+        //Contato
+        $(".section-contato").each(function (index) {
+          let tl = gsap.timeline({ paused: true });
+          tl.from($(this), {
+            opacity: 0,
+            y: "4rem",
+            duration: 0.8,
+            ease: "power2.out",
+            stagger: { amount: 0.4 },
+          });
+          createScrollTrigger($(this), tl);
+        });
 
-        // //Integrações Home
-        // $(".section-integracoes").each(function (index) {
-        //   let tl = gsap.timeline({ paused: true });
-        //   tl.from($(this).find(".integracao-animate-line"), {
-        //     opacity: 0,
-        //     y: "2rem",
-        //     duration: 0.8,
-        //     ease: "power2.out",
-        //     stagger: { amount: 0.4 },
-        //   });
-        //   tl.from(
-        //     $(this).find(".intg-dot"),
-        //     {
-        //       opacity: 0,
-        //       duration: 0.8,
-        //       ease: "power2.out",
-        //       stagger: { amount: 0.4 },
-        //     },
-        //     "-=0.8"
-        //   );
-        //   tl.from(
-        //     $(this).find("[animate=logo]"),
-        //     {
-        //       opacity: 0,
-        //       x: "-1rem",
-        //       duration: 0.8,
-        //       ease: "power2.out",
-        //       stagger: { amount: 0.4 },
-        //     },
-        //     "-=0.6"
-        //   );
-        //   createScrollTrigger($(this), tl);
-        // });
+        //Integrações Home
+        $(".section-integracoes").each(function (index) {
+          let tl = gsap.timeline({ paused: true });
+          tl.from($(this).find(".integracao-animate-line"), {
+            opacity: 0,
+            y: "2rem",
+            duration: 0.8,
+            ease: "power2.out",
+            stagger: { amount: 0.4 },
+          });
+          tl.from(
+            $(this).find(".intg-dot"),
+            {
+              opacity: 0,
+              duration: 0.8,
+              ease: "power2.out",
+              stagger: { amount: 0.4 },
+            },
+            "-=0.8"
+          );
+          tl.from(
+            $(this).find("[animate=logo]"),
+            {
+              opacity: 0,
+              x: "-1rem",
+              duration: 0.8,
+              ease: "power2.out",
+              stagger: { amount: 0.4 },
+            },
+            "-=0.6"
+          );
+          createScrollTrigger($(this), tl);
+        });
 
         // //Fade
         $("[animate=fade]").each(function (index) {
