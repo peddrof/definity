@@ -1718,18 +1718,18 @@ body {
           createScrollTrigger($(this), tl);
         });
 
-        //Footer
-        $(".footer").each(function (index) {
-          let tl = gsap.timeline({ paused: true });
-          tl.from($(this).find("> *"), {
-            opacity: 0,
-            y: "2rem",
-            duration: 0.8,
-            ease: "power2.out",
-            stagger: { amount: 0.4 },
-          });
-          createScrollTrigger($(this), tl);
-        });
+        // //Footer
+        // $(".footer").each(function (index) {
+        //   let tl = gsap.timeline({ paused: true });
+        //   tl.from($(this).find("> *"), {
+        //     opacity: 0,
+        //     y: "2rem",
+        //     duration: 0.8,
+        //     ease: "power2.out",
+        //     stagger: { amount: 0.4 },
+        //   });
+        //   createScrollTrigger($(this), tl);
+        // });
 
         //Contato
         $(".section-contato").each(function (index) {
